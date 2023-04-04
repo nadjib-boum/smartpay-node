@@ -1,0 +1,24 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Response Handler</title>
+   </head>
+   <body data-new-gr-c-s-check-loaded="14.1100.0" data-gr-ext-installed="">
+      <center>
+         <font size="4" color="blue"><b>Response Page</b></font>
+         <br>
+         <table border="1" cellspacing="2" cellpadding="2">
+            <tbody>
+               <% for (const [paramKey, paramVal] of responseParams) { %>
+                  <tr>
+                     <td><%= paramKey %></td>
+                     <td><%= paramVal %></td>
+                  </tr>
+               <% } %>
+            </tbody>
+         </table>
+      </center>
+      <br>
+   </body>
+   <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</html>
